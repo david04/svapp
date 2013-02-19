@@ -48,7 +48,7 @@ trait MailServiceSVAppComponent {
       }.start()
     }
 
-    def sendTemplate(template: EmailTemplate, email: Option[String] = None) {
+    def sendTemplate(template: EmailTemplate, email: Option[String] = None, usr: AbstractUsr) {
       if (template.shouldSend()) {
         val subject = template.subject()
         val html = SimpleLetterheadLeftlogoLayout.html(
@@ -67,7 +67,7 @@ trait MailServiceSVAppComponent {
           template.sideContent(),
           template.mainContent(),
           List(),
-          svApp.conf.supportEmail,
+          conf.supportEmail,
           List()
         )
         send(email match {

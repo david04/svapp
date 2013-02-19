@@ -4,7 +4,7 @@
     <list default="true" id="3bd58bdd-5d84-4398-8b65-6d8984e203e3" name="Default" comment="" />
     <ignored path="svapp.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/SBT" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287734137" ignored="false" />
+    <file path="/SBT" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287939974" ignored="false" />
     <file path="$USER_HOME$/ciab/contracting/Jeffrey/biaudit/build.sbt" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1359738432603" ignored="false" />
     <file path="/Account.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361277212377" ignored="false" />
     <file path="$USER_HOME$/ciab/contracting/Jeffrey/biaudit/src/main/scala/com/redtigersoftware/biaudit/model/Account.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1359747134860" ignored="false" />
@@ -192,9 +192,9 @@
     <file path="$USER_HOME$/.ivy2/cache/com.vaadin/vaadin-shared/jars/vaadin-shared-7.0-SNAPSHOT.jar!/com/vaadin/shared/ui/orderedlayout/VerticalLayoutState.java" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1360835991318" ignored="false" />
     <file path="$USER_HOME$/.ivy2/cache/com.vaadin/vaadin-theme-compiler/jars/vaadin-theme-compiler-7.0-SNAPSHOT.jar!/release-notes.html" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1360835991318" ignored="false" />
     <file path="$USER_HOME$/.ivy2/cache/com.vaadin/vaadin-shared/jars/vaadin-shared-7.0-SNAPSHOT.jar!/release-notes.html" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1360835991319" ignored="false" />
-    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/src/main/scala/com/redtigersoftware/ppcadmin/view/LoginHelper.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287380622" ignored="false" />
+    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/src/main/scala/com/redtigersoftware/ppcadmin/view/LoginHelper.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361288067961" ignored="false" />
     <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/src/main/scala/com/redtigersoftware/ppcadmin/view/ApplicationHelper.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361276426851" ignored="false" />
-    <file path="/LoginHelper.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287370349" ignored="false" />
+    <file path="/LoginHelper.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287927814" ignored="false" />
     <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/src/main/webapp/VAADIN/themes/ppcadmin/styles.css" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361230192270" ignored="false" />
     <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/src/main/webapp/VAADIN/themes/ppcadmin/layouts/login.html" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287348512" ignored="false" />
     <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/src/main/scala/com/redtigersoftware/ppcadmin/model/Usr.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361277833685" ignored="false" />
@@ -270,7 +270,7 @@
     <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/util/AppImplicits.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361268136482" ignored="false" />
     <file path="/DefaultConf.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287676147" ignored="false" />
     <file path="/DefaultCntx.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361272415265" ignored="false" />
-    <file path="/MailService.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361266631828" ignored="false" />
+    <file path="/MailService.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361288029090" ignored="false" />
     <file path="/DBAccess.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361265878729" ignored="false" />
     <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/src/main/scala/com/redtigersoftware/ppcadmin/model/M.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361267904045" ignored="false" />
     <file path="/M.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361267866834" ignored="false" />
@@ -280,24 +280,24 @@
     <file path="/DateUtil.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361273503407" ignored="false" />
     <file path="/SVAppApplication.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361270283549" ignored="false" />
     <file path="/ErrorsHelper.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361271350231" ignored="false" />
-    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/model/DBAccountSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287640202" ignored="false" />
-    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/model/DBUsrSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287640202" ignored="false" />
-    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/view/CntxtSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287640202" ignored="false" />
-    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/db/DBCompanionSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287640202" ignored="false" />
-    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/util/ConfSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287640202" ignored="false" />
-    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/util/Logging.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287640202" ignored="false" />
-    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/db/DBPropSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287640202" ignored="false" />
-    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/util/NaviagationSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287640202" ignored="false" />
-    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/util/DateUtilsSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287640202" ignored="false" />
-    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/db/DBClassSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287640202" ignored="false" />
-    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/db/DBSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287640202" ignored="false" />
-    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/base/SVApp.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287640202" ignored="false" />
+    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/model/DBAccountSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287753581" ignored="false" />
+    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/model/DBUsrSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287753581" ignored="false" />
+    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/view/CntxtSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287753581" ignored="false" />
+    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/db/DBCompanionSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287753581" ignored="false" />
+    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/util/ConfSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287753581" ignored="false" />
+    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/util/Logging.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287753581" ignored="false" />
+    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/db/DBPropSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287753581" ignored="false" />
+    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/util/NaviagationSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287753581" ignored="false" />
+    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/util/DateUtilsSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287753581" ignored="false" />
+    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/db/DBClassSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287753581" ignored="false" />
+    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/db/DBSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287753581" ignored="false" />
+    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/base/SVApp.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287753581" ignored="false" />
     <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/src/main/scala/com/redtigersoftware/ppcadmin/base/PPCAdmin.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287172869" ignored="false" />
     <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/src/main/scala/com/redtigersoftware/ppcadmin/view/Cntxt.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287636310" ignored="false" />
     <file path="/PPCAdmin.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287172869" ignored="false" />
-    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/mail/EmailTemplate.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287640202" ignored="false" />
-    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/util/LayoutUtilsSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287640202" ignored="false" />
-    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/mail/MailServiceSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287640202" ignored="false" />
+    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/mail/EmailTemplate.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287753581" ignored="false" />
+    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/util/LayoutUtilsSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287753581" ignored="false" />
+    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/mail/MailServiceSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287753581" ignored="false" />
     <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/src/main/scala/com/redtigersoftware/ppcadmin/util/Conf.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287654626" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
