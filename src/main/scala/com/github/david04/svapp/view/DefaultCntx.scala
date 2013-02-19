@@ -7,7 +7,7 @@ import com.github.david04.svapp.base.SVApp
 trait CntxtSVAppComponent {
   self: SVApp =>
 
-  val cntxt = new Cntxt()
+  lazy val cntxt = new Cntxt()
 
   class Cntxt {
 

@@ -427,6 +427,7 @@ trait DBClassSVAppComponent {
           case Some(v) => SQL("update " + compObjHelper.table + " SET " + name + "={val} where id={id}").onParams(v, id).executeUpdate()
           case None => SQL("update " + compObjHelper.table + " SET " + name + "={val} where id={id}").onParams(None, id).executeUpdate()
           case null => SQL("update " + compObjHelper.table + " SET " + name + "=null where id={id}").onParams(id).executeUpdate()
+          case v => SQL("update " + compObjHelper.table + " SET " + name + "={val} where id={id}").onParams(v, id).executeUpdate()
         }
     }
 

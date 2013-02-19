@@ -4,7 +4,7 @@
     <list default="true" id="3bd58bdd-5d84-4398-8b65-6d8984e203e3" name="Default" comment="" />
     <ignored path="svapp.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/SBT" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361278093553" ignored="false" />
+    <file path="/SBT" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287734137" ignored="false" />
     <file path="$USER_HOME$/ciab/contracting/Jeffrey/biaudit/build.sbt" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1359738432603" ignored="false" />
     <file path="/Account.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361277212377" ignored="false" />
     <file path="$USER_HOME$/ciab/contracting/Jeffrey/biaudit/src/main/scala/com/redtigersoftware/biaudit/model/Account.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1359747134860" ignored="false" />
@@ -183,7 +183,7 @@
     <file path="$PROJECT_DIR$/../contracting/Jeffrey/biaudit/src/main/webapp/VAADIN/themes/svapp/css/style_min.css" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1360772182284" ignored="false" />
     <file path="$PROJECT_DIR$/../contracting/Jeffrey/biaudit/src/main/scala/com/redtigersoftware/biaudit/view/SVApp.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1360798105611" ignored="false" />
     <file path="$PROJECT_DIR$/../contracting/Jeffrey/biaudit/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/util/RootHierarchicalURLItem.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1360772632335" ignored="false" />
-    <file path="/SVApp.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361276979321" ignored="false" />
+    <file path="/SVApp.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361286741954" ignored="false" />
     <file path="$PROJECT_DIR$/../contracting/Jeffrey/biaudit/build.sbt" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1360774653191" ignored="false" />
     <file path="$PROJECT_DIR$/../contracting/Jeffrey/biaudit/src/main/scala/com/redtigersoftware/biaudit/util/layout/BIAuditServlet.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1360835900716" ignored="false" />
     <file path="/BIAuditServlet.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1360835901135" ignored="false" />
@@ -192,11 +192,11 @@
     <file path="$USER_HOME$/.ivy2/cache/com.vaadin/vaadin-shared/jars/vaadin-shared-7.0-SNAPSHOT.jar!/com/vaadin/shared/ui/orderedlayout/VerticalLayoutState.java" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1360835991318" ignored="false" />
     <file path="$USER_HOME$/.ivy2/cache/com.vaadin/vaadin-theme-compiler/jars/vaadin-theme-compiler-7.0-SNAPSHOT.jar!/release-notes.html" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1360835991318" ignored="false" />
     <file path="$USER_HOME$/.ivy2/cache/com.vaadin/vaadin-shared/jars/vaadin-shared-7.0-SNAPSHOT.jar!/release-notes.html" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1360835991319" ignored="false" />
-    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/src/main/scala/com/redtigersoftware/ppcadmin/view/LoginHelper.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361277843771" ignored="false" />
+    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/src/main/scala/com/redtigersoftware/ppcadmin/view/LoginHelper.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287380622" ignored="false" />
     <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/src/main/scala/com/redtigersoftware/ppcadmin/view/ApplicationHelper.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361276426851" ignored="false" />
-    <file path="/LoginHelper.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361277837920" ignored="false" />
+    <file path="/LoginHelper.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287370349" ignored="false" />
     <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/src/main/webapp/VAADIN/themes/ppcadmin/styles.css" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361230192270" ignored="false" />
-    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/src/main/webapp/VAADIN/themes/ppcadmin/layouts/login.html" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1360941742868" ignored="false" />
+    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/src/main/webapp/VAADIN/themes/ppcadmin/layouts/login.html" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287348512" ignored="false" />
     <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/src/main/scala/com/redtigersoftware/ppcadmin/model/Usr.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361277833685" ignored="false" />
     <file path="/AbstractUsr.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361273340791" ignored="false" />
     <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/src/main/scala/com/redtigersoftware/ppcadmin/model/Account.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361277216715" ignored="false" />
@@ -212,11 +212,11 @@
     <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/src/main/scala/com/redtigersoftware/ppcadmin/view/Icons.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361012060591" ignored="false" />
     <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/src/main/scala/com/redtigersoftware/ppcadmin/util/layout/Grid960.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361012080527" ignored="false" />
     <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/src/main/scala/com/redtigersoftware/ppcadmin/package.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361012161679" ignored="false" />
-    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/src/main/scala/com/redtigersoftware/ppcadmin/mail/EmailTemplates.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361276739019" ignored="false" />
+    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/src/main/scala/com/redtigersoftware/ppcadmin/mail/EmailTemplates.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361286618466" ignored="false" />
     <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/src/main/scala/com/redtigersoftware/ppcadmin/view/Cntx.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361268240086" ignored="false" />
     <file path="/AdminHelper.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361012307502" ignored="false" />
     <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/src/main/scala/com/redtigersoftware/ppcadmin/view/SettingsHelper.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361277848377" ignored="false" />
-    <file path="/EmailTemplates.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361012316920" ignored="false" />
+    <file path="/EmailTemplates.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361286573101" ignored="false" />
     <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/src/main/webapp/VAADIN/themes/ppcadmin/layouts/css/styles.css" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361018903568" ignored="false" />
     <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/src/main/webapp/VAADIN/themes/ppcadmin/layouts/main.html" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361263870579" ignored="false" />
     <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/src/main/scala/com/redtigersoftware/ppcadmin/util/package.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361013698152" ignored="false" />
@@ -268,7 +268,7 @@
     <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/src/main/scala/com/redtigersoftware/ppcadmin/layout/Other.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361227758114" ignored="false" />
     <file path="/Other.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361218599946" ignored="false" />
     <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/util/AppImplicits.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361268136482" ignored="false" />
-    <file path="/DefaultConf.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361273578408" ignored="false" />
+    <file path="/DefaultConf.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287676147" ignored="false" />
     <file path="/DefaultCntx.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361272415265" ignored="false" />
     <file path="/MailService.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361266631828" ignored="false" />
     <file path="/DBAccess.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361265878729" ignored="false" />
@@ -280,21 +280,25 @@
     <file path="/DateUtil.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361273503407" ignored="false" />
     <file path="/SVAppApplication.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361270283549" ignored="false" />
     <file path="/ErrorsHelper.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361271350231" ignored="false" />
-    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/model/DBAccountSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361277918701" ignored="false" />
-    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/model/DBUsrSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361277918701" ignored="false" />
-    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/view/CntxtSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361277918701" ignored="false" />
-    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/db/DBCompanionSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361277918701" ignored="false" />
-    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/util/ConfSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361277919005" ignored="false" />
-    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/util/Logging.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361277918701" ignored="false" />
-    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/db/DBPropSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361277918702" ignored="false" />
-    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/util/NaviagationSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361277919005" ignored="false" />
-    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/util/DateUtilsSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361277918702" ignored="false" />
-    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/db/DBClassSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361277918702" ignored="false" />
-    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/db/DBSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361277918702" ignored="false" />
-    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/base/SVApp.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361277919005" ignored="false" />
-    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/src/main/scala/com/redtigersoftware/ppcadmin/base/PPCAdmin.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361278090938" ignored="false" />
-    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/src/main/scala/com/redtigersoftware/ppcadmin/view/Cntxt.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361276590489" ignored="false" />
-    <file path="/PPCAdmin.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361277768111" ignored="false" />
+    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/model/DBAccountSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287640202" ignored="false" />
+    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/model/DBUsrSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287640202" ignored="false" />
+    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/view/CntxtSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287640202" ignored="false" />
+    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/db/DBCompanionSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287640202" ignored="false" />
+    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/util/ConfSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287640202" ignored="false" />
+    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/util/Logging.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287640202" ignored="false" />
+    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/db/DBPropSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287640202" ignored="false" />
+    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/util/NaviagationSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287640202" ignored="false" />
+    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/util/DateUtilsSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287640202" ignored="false" />
+    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/db/DBClassSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287640202" ignored="false" />
+    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/db/DBSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287640202" ignored="false" />
+    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/base/SVApp.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287640202" ignored="false" />
+    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/src/main/scala/com/redtigersoftware/ppcadmin/base/PPCAdmin.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287172869" ignored="false" />
+    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/src/main/scala/com/redtigersoftware/ppcadmin/view/Cntxt.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287636310" ignored="false" />
+    <file path="/PPCAdmin.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287172869" ignored="false" />
+    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/mail/EmailTemplate.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287640202" ignored="false" />
+    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/util/LayoutUtilsSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287640202" ignored="false" />
+    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/lib/svapp_2.10-0.1.jar!/com/github/david04/svapp/mail/MailServiceSVAppComponent.class" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287640202" ignored="false" />
+    <file path="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/src/main/scala/com/redtigersoftware/ppcadmin/util/Conf.scala" changelist="3bd58bdd-5d84-4398-8b65-6d8984e203e3" time="1361287654626" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -354,57 +358,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ImageHelper.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/util/ImageHelper.scala">
+      <file leaf-file-name="SamplelTemplate.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/mail/SamplelTemplate.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="42" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0">
+            <state line="17" column="0" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefaultConf.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/util/DefaultConf.scala">
+      <file leaf-file-name="SimpleLetterheadLeftlogoLayout.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/mail/SimpleLetterheadLeftlogoLayout.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="30" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Config.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/opt/scala/lib/typesafe-config.jar!/com/typesafe/config/Config.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="17" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DBObjectClassTrait.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/db/DBObjectClassTrait.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="297" column="0" selection-start="11122" selection-end="11125" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractAccount.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/model/AbstractAccount.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="25" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#40#59#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractUsr.scala" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/model/AbstractUsr.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="16" selection-start="1671" selection-end="1671" vertical-scroll-proportion="0.36437246">
+            <state line="191" column="0" selection-start="15689" selection-end="15689" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -413,16 +379,16 @@
       <file leaf-file-name="EmailTemplate.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/mail/EmailTemplate.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="27" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0">
+            <state line="19" column="0" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ErrorsHelper.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/view/ErrorsHelper.scala">
+      <file leaf-file-name="MailService.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/mail/MailService.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="194" selection-end="206" vertical-scroll-proportion="0.0">
+            <state line="20" column="37" selection-start="175" selection-end="200" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -431,16 +397,16 @@
       <file leaf-file-name="SVApp.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/base/SVApp.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="148" column="0" selection-start="4859" selection-end="4859" vertical-scroll-proportion="0.0">
+            <state line="59" column="7" selection-start="2064" selection-end="2064" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LayoutUtils.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/util/LayoutUtils.scala">
+      <file leaf-file-name="DefaultCntx.scala" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/view/DefaultCntx.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="5" selection-start="140" selection-end="165" vertical-scroll-proportion="0.0">
+            <state line="9" column="7" selection-start="164" selection-end="164" vertical-scroll-proportion="0.13574661">
               <folding />
             </state>
           </provider>
@@ -456,9 +422,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/db/DBAccess.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/view/DefaultCntx.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/db/DBProp.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/util/HierarchicalLayoutMixin.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/util/AppImplicits.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/view/ErrorsHelper.scala" />
@@ -469,9 +432,12 @@
         <option value="$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/util/ImageHelper.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/util/DefaultConf.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/db/DBCompanionObjectTrait.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/base/SVApp.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/model/AbstractAccount.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/model/AbstractUsr.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/model/Ticket.scala" />
+        <option value="$PROJECT_DIR$/../contracting/Shaun/ppcadmin/src/main/scala/com/redtigersoftware/ppcadmin/model/Ticket.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/base/SVApp.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/view/DefaultCntx.scala" />
       </list>
     </option>
   </component>
@@ -509,6 +475,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -761,7 +728,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -786,6 +752,9 @@
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.github.david04.svapp.util" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/model" />
     </key>
   </component>
   <component name="RunManager" selected="Remote.Unnamed">
@@ -910,13 +879,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="0" width="1926" height="1055" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4054945" sideWeight="0.49786553" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4054945" sideWeight="0.49786553" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4054945" sideWeight="0.49839914" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -990,35 +959,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/util/HierarchicalLayoutMixin.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="12" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/util/AppImplicits.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="90" selection-end="158" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/db/DBProp.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="17" selection-start="1214" selection-end="1214" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/mail/SamplelTemplate.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="42" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/util/DateUtil.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="178" column="69" selection-start="5914" selection-end="5914" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/util/ImageHelper.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="42" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0">
@@ -1028,21 +968,12 @@
     </entry>
     <entry file="jar://$USER_HOME$/opt/scala/lib/typesafe-config.jar!/com/typesafe/config/Config.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="6" column="17" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/util/DefaultConf.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="30" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/db/DBObjectClassTrait.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="297" column="0" selection-start="11122" selection-end="11125" vertical-scroll-proportion="0.0">
+        <state line="17" column="30" selection-start="476" selection-end="476" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1056,44 +987,84 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/view/ErrorsHelper.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="194" selection-end="206" vertical-scroll-proportion="0.0">
+        <state line="15" column="0" selection-start="194" selection-end="206" vertical-scroll-proportion="0.2545249">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/model/AbstractUsr.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="27" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.31058824">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/util/LayoutUtils.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="5" selection-start="140" selection-end="165" vertical-scroll-proportion="0.0">
+        <state line="25" column="19" selection-start="719" selection-end="719" vertical-scroll-proportion="0.10332951">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/mail/EmailTemplate.scala">
+    <entry file="file://$PROJECT_DIR$/../contracting/Shaun/ppcadmin/src/main/scala/com/redtigersoftware/ppcadmin/model/Ticket.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="27" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0">
+        <state line="9" column="1" selection-start="220" selection-end="220" vertical-scroll-proportion="0.1628468">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/base/SVApp.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/db/DBObjectClassTrait.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="148" column="0" selection-start="4859" selection-end="4859" vertical-scroll-proportion="0.0">
+        <state line="297" column="0" selection-start="11122" selection-end="11125" vertical-scroll-proportion="0.01764706">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/model/AbstractAccount.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="25" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#40#59#0" expanded="true" />
-          </folding>
+        <state line="11" column="36" selection-start="294" selection-end="294" vertical-scroll-proportion="0.16968326">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/model/AbstractUsr.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/mail/SamplelTemplate.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="16" selection-start="1671" selection-end="1671" vertical-scroll-proportion="0.36437246">
+        <state line="17" column="0" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/mail/SimpleLetterheadLeftlogoLayout.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="191" column="0" selection-start="15689" selection-end="15689" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/mail/EmailTemplate.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/mail/MailService.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="37" selection-start="175" selection-end="200" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/base/SVApp.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="7" selection-start="2064" selection-end="2064" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/github/david04/svapp/view/DefaultCntx.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="7" selection-start="164" selection-end="164" vertical-scroll-proportion="0.13574661">
           <folding />
         </state>
       </provider>

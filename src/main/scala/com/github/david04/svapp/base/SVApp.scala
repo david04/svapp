@@ -12,6 +12,7 @@ import javax.servlet.http.{Cookie, HttpServletRequest, HttpServletResponse}
 import com.github.david04.svapp.db.{DBClassSVAppComponent, DBSVAppComponent, DBPropSVAppComponent}
 import com.github.david04.db.DBCompanionSVAppComponent
 import com.github.david04.svapp.view.{ErrorsHelperSVAppComponent, CntxtSVAppComponent}
+import com.github.david04.svapp.mail.MailServiceSVAppComponent
 
 case class ContextChangeEvent(cntxt: Seq[String])
 
@@ -31,6 +32,7 @@ with DBAccountSVAppComponent
 with DBUsrSVAppComponent
 with ErrorsHelperSVAppComponent
 with LayoutUtilsSVAppComponent
+with MailServiceSVAppComponent
 with DateUtilsSVAppComponent {
 
   implicit val svApp: this.type = this

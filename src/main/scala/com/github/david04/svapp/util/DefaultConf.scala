@@ -8,9 +8,9 @@ import com.typesafe.config.{Config, ConfigFactory}
 trait ConfSVAppComponent {
   svApp: SVApp =>
 
-  val conf: DefaultConf
+ lazy val conf: DefaultConf = new DefaultConf()
 
-  abstract class DefaultConf extends Logging {
+  class DefaultConf extends Logging {
 
     protected lazy val config: Config = ConfigFactory.load()
 

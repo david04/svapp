@@ -15,10 +15,10 @@ trait MailServiceSVAppComponent {
 
     private val mailService = this
     private val props = new Properties()
-    props.put("mail.smtp.auth", "" + svApp.conf.emailSmtpAuth)
-    props.put("mail.smtp.starttls.enable", "" + svApp.conf.emailSmtpStarttls)
-    props.put("mail.smtp.host", svApp.conf.emailSmtpHost)
-    props.put("mail.smtp.port", "" + svApp.conf.emailSmtpPort)
+    props.put("mail.smtp.auth", "" + conf.emailSmtpAuth)
+    props.put("mail.smtp.starttls.enable", "" + conf.emailSmtpStarttls)
+    props.put("mail.smtp.host", conf.emailSmtpHost)
+    props.put("mail.smtp.port", "" + conf.emailSmtpPort)
 
     private val session: Session = Session.getInstance(props,
       new javax.mail.Authenticator() {
