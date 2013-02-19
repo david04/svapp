@@ -7,9 +7,9 @@ import com.github.david04.svapp.base.SVApp
 trait CntxtSVAppComponent {
   self: SVApp =>
 
-  val cntxt = new DefaultCntxt()
+  val cntxt = new Cntxt()
 
-  class DefaultCntxt {
+  class Cntxt {
 
     def cntxToLink(cntx: List[String]) = {
       "http://" + conf.appDomain + "#" + cntx.mkString("/")

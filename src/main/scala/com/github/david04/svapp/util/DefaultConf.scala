@@ -3,16 +3,16 @@ package com.github.david04.svapp.util
 import org.apache.log4j.Level
 import java.io.File
 import com.github.david04.svapp.base.SVApp
-import com.typesafe.config.ConfigFactory
+import com.typesafe.config.{Config, ConfigFactory}
 
 trait ConfSVAppComponent {
   svApp: SVApp =>
 
-  val conf = new DefaultConf()
+  val conf: DefaultConf
 
-  class DefaultConf extends Logging {
+  abstract class DefaultConf extends Logging {
 
-    protected val config = ConfigFactory.load()
+    protected lazy val config: Config = ConfigFactory.load()
 
     protected def get[T](key: String, default: Option[T], parser: String => T) =
       if (config.hasPath(key))

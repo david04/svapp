@@ -68,11 +68,12 @@ trait DBUsrSVAppComponent {
       new BigInteger(1, digest.digest()).toString(16);
     }
 
-    val table = "usr"
+    lazy val table = "usr"
 
     def fromEmail(email: String): Option[T] = where("email", email).headOption
 
     def authenticate(email: String, password: String): Boolean =
       fromEmail(email) match {case Some(u) => u.password.value == password case _ => false }
   }
+
 }

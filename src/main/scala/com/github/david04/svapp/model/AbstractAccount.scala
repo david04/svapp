@@ -14,6 +14,7 @@ trait DBAccountSVAppComponent {
 
   abstract class AbstractAccounts[T <: AbstractAccount] extends DBCompanionObjectTrait[T] {
 
-    val table = "account"
+    lazy val table = "account"
   }
+
 }

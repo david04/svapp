@@ -11,7 +11,7 @@ import server.Page.UriFragmentChangedEvent
 import javax.servlet.http.{Cookie, HttpServletRequest, HttpServletResponse}
 import com.github.david04.svapp.db.{DBClassSVAppComponent, DBSVAppComponent, DBPropSVAppComponent}
 import com.github.david04.db.DBCompanionSVAppComponent
-import com.github.david04.svapp.view.CntxtSVAppComponent
+import com.github.david04.svapp.view.{ErrorsHelperSVAppComponent, CntxtSVAppComponent}
 
 case class ContextChangeEvent(cntxt: Seq[String])
 
@@ -29,19 +29,11 @@ with DBCompanionSVAppComponent
 with DBClassSVAppComponent
 with DBAccountSVAppComponent
 with DBUsrSVAppComponent
+with ErrorsHelperSVAppComponent
+with LayoutUtilsSVAppComponent
 with DateUtilsSVAppComponent {
 
-
   implicit val svApp: this.type = this
-  // ====== <DEPENDENCY INJECTION> ======
-
-  val name: String
-
-  val themeName: String
-
-  val windowName: String
-
-  // ====== </DEPENDENCY INJECTION> ======
 
   lazy val appCache = collection.mutable.Map[Any, Any]()
 
@@ -62,7 +54,8 @@ with DateUtilsSVAppComponent {
 
     cntx match {
       case Some(c) => page.setUriFragment(c.mkString("/"), true)
-      case None => {}
+      case None => {
+      }
     }
   }
 
@@ -91,7 +84,10 @@ with DateUtilsSVAppComponent {
     contextChangeListeners.foreach(_.contextChanged(ContextChangeEvent(context)))
   }
 
-  def currentContext() = current match {case Some(c) => c case None => List[String]() }
+  def currentContext() = current match {
+    case Some(c) => c
+    case None => List[String]()
+  }
 
   override def init(req: ScaladinRequest): Unit = DebugTime("Init") {
     Logger.getLogger(this.getClass).info("IP: " + request.getRemoteAddr)
