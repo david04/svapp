@@ -1,9 +1,16 @@
 
 source settings.sh
 
-NEWNAME="$NAME"
-echo "Old name?"
+while true;
+do
+
+echo "FROM:"
 read OLDNAME
+
+[[ "$OLDNAME" = "" ]] && break;
+
+echo "TO:"
+read NEWNAME
 
 echo "$OLDNAME => $NEWNAME ok?"
 read i
@@ -28,6 +35,8 @@ do
   mv -vi "$NEXT" "$(echo "$NEXT" | sed "s/$OLDNAME/$NEWNAME/g")";
   NEXT="$(find -type d | grep -i $OLDNAME | head -n 1)"
 done
+
+done;
 
 echo "Compile project"
 echo "compile" | sbt

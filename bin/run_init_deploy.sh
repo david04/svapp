@@ -21,6 +21,9 @@ source settings.sh
 #RUN "cd /opt ; wget -v '$JETTY_URL'; tar -xzf '$JETTY_VER.tar.gz'"
 #RUN "cd /opt/$JETTY_VER ; rm -rfv contexts/* ; rm -rfv webapps/*war "
 
+#RUN "echo -e 'alias "s"="su -" \nalias "u"="cd .." \nalias "b"="cd -" \nalias "l"="ls -lah" \nalias "p"="ps aux"' >> $HOME/.bashrc"
+
+
 #TODO: SET JETTY PORT at etc/jetty.xml
 
 #./run_deploy.sh

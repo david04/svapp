@@ -22,5 +22,6 @@ libraryDependencies ++= Seq(
   "javax.mail" % "mail" % "1.4.5",
   "log4j" % "log4j" % "1.2.17",
   "com.typesafe" %% "scalalogging-slf4j" % "1.0.1",
-  "com.typesafe" % "config" % "1.0.0"
+  "com.typesafe" % "config" % "1.0.0",
+  "com.googlecode.json-simple" % "json-simple" % "1.1.1"
 )

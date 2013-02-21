@@ -19,6 +19,45 @@
 .display-table-row-group { display: table-row-group; }
 .display-inherit { display: inherit; }
 
-.margin-left-10 { margin-left: 10px }
+
+.margin-10px { margin: 10px }
+.margin-top-10px { margin-top: 10px }
+.margin-right-10px { margin-right: 10px }
+.margin-bottom-10px { margin-bottom: 10px }
+.margin-left-10px { margin-left: 10px }
+
+.margin-20px { margin: 20px }
+.margin-top-20px { margin-top: 20px }
+.margin-right-20px { margin-right: 20px }
+.margin-bottom-20px { margin-bottom: 20px }
+.margin-left-20px { margin-left: 20px }
+
+.margin-30px { margin: 30px }
+.margin-top-30px { margin-top: 30px }
+.margin-right-30px { margin-right: 30px }
+.margin-bottom-30px { margin-bottom: 30px }
+.margin-left-30px { margin-left: 30px }
+
+.margin-40px { margin: 40px }
+.margin-top-40px { margin-top: 40px }
+.margin-right-40px { margin-right: 40px }
+.margin-bottom-40px { margin-bottom: 40px }
+.margin-left-40px { margin-left: 40px }
 
 .text-align-right { text-align: right; }
+.text-align-center { text-align: center; }
+.text-align-left { text-align: left; }
+
+.th-text-align-right th { text-align: right; }
+.th-text-align-center th { text-align: center; }
+.th-text-align-left th { text-align: left; }
+
+.td-text-align-right td { text-align: right; }
+.td-text-align-center td { text-align: center; }
+.td-text-align-left td { text-align: left; }
+
+.float-left { float: left; }
+.float-right { float: right; }
+.float-none { float: none; }
+.float-inherit { float: inherit; }
+

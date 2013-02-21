@@ -204,7 +204,7 @@ trait DBClassSVAppComponent {
                                                        objCompanion: DBCompanionObjectTrait[P],
                                                        name: String,
                                                        pType: DBPropertyType,
-                                                       afterValueSet: (P) => Unit)(implicit row: SqlRow): DBObjProp[P] = {
+                                                       afterValueSet: (P) => Unit)(implicit row: SqlRow) = {
 
       def initVal: P =
         try {
@@ -377,7 +377,7 @@ trait DBClassSVAppComponent {
                                                        pType: DBPropertyType = DBPropertyTypes.UNDEFINED,
                                                        thisIdName: String = compObjHelper.table + "id",
                                                        otherIdName: String = null,
-                                                       relationTable: String = null) = {
+                                                       relationTable: String = null): DBProp[Set[Q]] = {
 
       val _otherIdName = if (otherIdName != null) otherIdName else (otherCompObjHelper.table + "id")
       val _relationTable = if (relationTable != null) relationTable else List(compObjHelper.table, otherCompObjHelper.table).sorted.mkString("")
@@ -436,4 +436,5 @@ trait DBClassSVAppComponent {
         SQL("select " + name + " from " + compObjHelper.table + " where id={id}").onParams(id)().head.asMap(compObjHelper.table + "." + name).asInstanceOf[P]
     }
   }
+
 }

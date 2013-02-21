@@ -13,6 +13,7 @@ import com.github.david04.svapp.db.{DBClassSVAppComponent, DBSVAppComponent, DBP
 import com.github.david04.db.DBCompanionSVAppComponent
 import com.github.david04.svapp.view.{ErrorsHelperSVAppComponent, CntxtSVAppComponent}
 import com.github.david04.svapp.mail.MailServiceSVAppComponent
+import com.github.david04.svapp.bootstrap.BSTablesSVAppComponent
 
 case class ContextChangeEvent(cntxt: Seq[String])
 
@@ -33,7 +34,8 @@ with DBUsrSVAppComponent
 with ErrorsHelperSVAppComponent
 with LayoutUtilsSVAppComponent
 with MailServiceSVAppComponent
-with DateUtilsSVAppComponent {
+with DateUtilsSVAppComponent
+with BSTablesSVAppComponent {
 
   implicit val svApp: this.type = this
 

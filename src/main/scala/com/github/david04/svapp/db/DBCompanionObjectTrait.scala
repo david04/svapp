@@ -28,7 +28,7 @@ trait DBCompanionSVAppComponent {
 
     protected def parse(stream: Stream[SqlRow]): T
 
-    val cache = DBCache.cache.getOrElse(table, collection.mutable.Map[Int, T]()).asInstanceOf[collection.mutable.Map[Int, T]]
+    lazy val cache = DBCache.cache.getOrElse(table, collection.mutable.Map[Int, T]()).asInstanceOf[collection.mutable.Map[Int, T]]
 
     def fromId(id: Int): T = {
       val v = db withConnection (implicit connection =>

@@ -11,9 +11,9 @@ trait CntxtSVAppComponent {
 
   class Cntxt {
 
-    def cntxToLink(cntx: List[String]) = {
-      "http://" + conf.appDomain + "#" + cntx.mkString("/")
-    }
+    def cntxToLink(cntx: List[String]) = "#" + cntx.mkString("/")
+
+    def cntxToExternalLink(cntx: List[String]) = "http://" + conf.appDomain + "#" + cntx.mkString("/")
 
     val LOGIN = List("login(:([^/])+)?")
 

@@ -2,6 +2,20 @@ package com.github.david04.svapp.mail
 
 object SimpleLetterheadLeftlogoLayout {
 
+  def text(currentYear: String,
+           companyName: String,
+           previewText: String,
+           viewOnlineLinkMsg: String,
+           logoLink: String,
+           mainTitleContents: String,
+           leftSideContents: String,
+           mainContents: String,
+           bottomLinks: List[(String, String)],
+           ourEmail: String,
+           lowerBottomLinks: List[(String, String)]) = {
+    mainContents
+  }
+
   def html(currentYear: String,
     companyName: String,
     previewText: String,

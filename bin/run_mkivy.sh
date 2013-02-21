@@ -1,8 +1,4 @@
 
-rm -rf ~/.ivy2/cache
-
-echo compile | sbt
-
 mkdir -p ivy
 
 rm ivy/*

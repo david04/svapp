@@ -85,13 +85,17 @@ trait DBPropSVAppComponent {
 
     private def addValueChangedListenerWithLayout(l: (T, AbstractUsr) => Unit, init: Boolean)(implicit layout: AbstractLayout): Unit = {
       if (init) l(value, usr)
-      layout.p.addAttachListener(new AttachListener {
+
+      val listener = new AttachListener {
         def attach(event: AttachEvent) {
           val ltnr = (vold: T, v: T, u: AbstractUsr) => l(v, u)
           valueChangeListeners(ltnr) = ValueChangedListener(ltnr, layout)
           DBPropertyListenersCounter ++
         }
-      })
+      }
+
+      if(layout.p.getParent != null) listener.attach(null)
+      layout.p.addAttachListener(listener)
       layout.p.addDetachListener(new DetachListener {
         def detach(event: DetachEvent) {
           val matched = valueChangeListeners.filter(kv => l == kv._2.originLayout).map(_._1)

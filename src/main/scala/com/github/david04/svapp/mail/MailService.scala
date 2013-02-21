@@ -27,7 +27,7 @@ trait MailServiceSVAppComponent {
         }
       })
 
-    def send(to: String, subject: String, text: String) {
+    def send(to: String, subject: String, text: String, html: Boolean = true) {
       new Thread() {
         override def run() {
           mailService.synchronized {
@@ -36,7 +36,7 @@ trait MailServiceSVAppComponent {
               message.setFrom(new InternetAddress(svApp.conf.emailFrom))
               message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(to).asInstanceOf[Array[javax.mail.Address]])
               message.setSubject(subject)
-              message.setContent(text, "text/html; charset=utf-8")
+              message.setContent(text, if (html) "text/html; charset=utf-8" else "text/plain; charset=utf-8")
 
               println("Sending email")
               Transport.send(message)
