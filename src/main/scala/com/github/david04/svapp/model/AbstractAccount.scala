@@ -1,10 +1,10 @@
 package com.github.david04.svapp.model
 
 import anorm.SqlRow
-import com.github.david04.svapp.base.SVApp
+import com.github.david04.svapp.base.{SVAppDB, SVApp}
 
 trait DBAccountSVAppComponent {
-  svApp: SVApp =>
+  svApp: SVAppDB =>
 
   abstract class AbstractAccount(implicit row: SqlRow) extends DBObjectClassTrait {
 

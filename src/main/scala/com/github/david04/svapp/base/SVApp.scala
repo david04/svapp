@@ -13,7 +13,9 @@ import com.github.david04.svapp.db.{DBClassSVAppComponent, DBSVAppComponent, DBP
 import com.github.david04.db.DBCompanionSVAppComponent
 import com.github.david04.svapp.view.{ErrorsHelperSVAppComponent, CntxtSVAppComponent}
 import com.github.david04.svapp.mail.MailServiceSVAppComponent
-import com.github.david04.svapp.bootstrap.BSTablesSVAppComponent
+import com.github.david04.svapp.bootstrap.{InnerHtml, BSTablesSVAppComponent}
+import javax.servlet.http
+import com.github.david04.svapp.bootstrap
 
 case class ContextChangeEvent(cntxt: Seq[String])
 
@@ -21,16 +23,22 @@ trait ContextChangeListener[E] {
   def contextChanged(e: E): Unit
 }
 
-trait SVApp extends UI with Logging
-with NaviagationSVAppComponent
-with ConfSVAppComponent
-with CntxtSVAppComponent
-with DBSVAppComponent
+trait SVAppDB extends DBSVAppComponent
 with DBPropSVAppComponent
 with DBCompanionSVAppComponent
 with DBClassSVAppComponent
 with DBAccountSVAppComponent
 with DBUsrSVAppComponent
+with ConfSVAppComponent
+with Logging {
+
+  implicit def usr: AbstractUsr
+}
+
+trait SVApp extends UI
+with SVAppDB
+with NaviagationSVAppComponent
+with CntxtSVAppComponent
 with ErrorsHelperSVAppComponent
 with LayoutUtilsSVAppComponent
 with MailServiceSVAppComponent
@@ -41,7 +49,6 @@ with BSTablesSVAppComponent {
 
   lazy val appCache = collection.mutable.Map[Any, Any]()
 
-  implicit def usr: AbstractUsr
 
   def request: HttpServletRequest = VaadinService.getCurrentRequest().asInstanceOf[VaadinServletRequest].getHttpServletRequest
 
@@ -54,7 +61,9 @@ with BSTablesSVAppComponent {
   protected def root: RootHierarchicalURLItem
 
   protected def dologin(user: AbstractUsr, cntx: Option[List[String]] = None) {
-    Logger.getLogger(this.getClass).info("Login: Id(%d) Name(%s)", usr.id, usr.name)
+    Logger.getLogger(this.getClass).info(s"Login: Id(${user.id}) Name(${user.name}) Account(${user.account.v.id}})")
+
+    if (conf.dev) bootstrap.Cookie("username") = user.email.value
 
     cntx match {
       case Some(c) => page.setUriFragment(c.mkString("/"), true)
@@ -64,7 +73,7 @@ with BSTablesSVAppComponent {
   }
 
   def logOut() {
-    if (conf.dev) svApp.response.addCookie(new Cookie("username", ""))
+    if (conf.dev) bootstrap.Cookie("username") = ""
     openContext(cntxt.LOGIN)
   }
 
@@ -76,16 +85,15 @@ with BSTablesSVAppComponent {
     page.open(url, null)
   }
 
-  private[this] var last: Option[Seq[String]] = None
-  private[this] var current: Option[Seq[String]] = None
+  private[this] var last: Option[List[String]] = None
+  private[this] var current: Option[List[String]] = None
 
   def back(): Unit = openContext(last.getOrElse(defaultCntxt()))
 
-  def openContext(context: Seq[String]) {
-    if (current != null) last = current
-    DebugTime("Open")(page.setUriFragment(context.mkString("/"), true))
-    current = Some(context)
-    contextChangeListeners.foreach(_.contextChanged(ContextChangeEvent(context)))
+  def openContext(context: List[String]) {
+    DebugTime("Open") {
+      page.setUriFragment(context.mkString("/"), true)
+    }
   }
 
   def currentContext() = current match {
@@ -123,7 +131,13 @@ with BSTablesSVAppComponent {
 
         if (page.uriFragment.getOrElse("") != "") {
           try {
-            DebugTime("Open " + page.uriFragment.get)(r.open(page.uriFragment.get.split('/').toList))
+            DebugTime("Open " + page.uriFragment.get) {
+              if (current != null) last = current
+              val context = page.uriFragment.get.split('/').toList
+              r.open(context)
+              current = Some(context)
+              contextChangeListeners.foreach(_.contextChanged(ContextChangeEvent(context)))
+            }
           } catch {
             case e: SVAppException => openContext(cntxt.ERROR(e.errorCode))
           }
@@ -134,7 +148,7 @@ with BSTablesSVAppComponent {
     page.uriFragment match {
       case None => openContext(defaultCntxt())
       case Some("") => openContext(defaultCntxt())
-      case Some(frag) => r.open(frag.split('/').toList)
+      case Some(frag) => {page.setUriFragment("", false); page.setUriFragment(frag, true)}
     }
   }
 
@@ -153,7 +167,7 @@ with BSTablesSVAppComponent {
 
       if (!tryLogin(lastUser)) {
         log.warn("Unknown user: " + lastUser)
-        response.addCookie(new Cookie("username", ""))
+        bootstrap.Cookie("username") = ""
       }
     }
   }

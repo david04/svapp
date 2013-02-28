@@ -32,7 +32,7 @@ class BoxWidget() extends CssLayout {styleNames += "box-widget"}
 
 class WidgetHead(private var wtitle: String = "", private var wicon: String = "") extends CssLayout {
   styleNames +=("widget-head", "clearfix")
-  private val lbl = new Label() {contentMode = ContentMode.Html}
+  private val lbl = new Label() {width = None; contentMode = ContentMode.Html}
   add(lbl)
 
   private def update(): Unit = lbl.value = s"<span class='h-icon'><i class='gray-icons $wicon '></i></span><h4> $wtitle </h4>"
@@ -57,6 +57,8 @@ class ControlGroup extends Div("control-group")
 class Controls extends Div("controls")
 
 class Div extends CssLayout {
+
+  protected implicit val div = this
 
   def this(s1: String) { this(); styleNames += (s1) }
 

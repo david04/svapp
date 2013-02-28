@@ -2,10 +2,12 @@ package com.github.david04.svapp.db
 
 import vaadin.scala.AbstractLayout
 import com.vaadin.server.ClientConnector.{DetachEvent, DetachListener, AttachEvent, AttachListener}
-import com.github.david04.svapp.base.SVApp
+import com.github.david04.svapp.base.{SVAppDB, SVApp}
 
 trait DBPropSVAppComponent {
-  svApp: SVApp =>
+  svApp: SVAppDB =>
+
+//  implicit def pvalue[T](p: PropRO[T]): T = p.value
 
   object DBPropertyListenersCounter {
 
@@ -29,6 +31,8 @@ trait DBPropSVAppComponent {
   trait PropRO[T] {
     def value: T
 
+    def v: T = value
+
     def addValueChangedListener(l: T => Unit, init: Boolean = true)(implicit layout: AbstractLayout): Unit
 
     private[db] def addValueChangedListenerNoLayout(l: PropRO.Listener[T], init: Boolean = true): Unit
@@ -39,6 +43,8 @@ trait DBPropSVAppComponent {
   trait Prop[T] extends PropRO[T] {
 
     def value_=(_value: T)(implicit usr: AbstractUsr): Unit
+
+    def v_=(_value: T)(implicit usr: AbstractUsr): Unit = { value = (_value) }
 
     override def equals(obj: Any): Boolean = throw new Exception("BUG: Testing for Prop equality.")
 
@@ -94,7 +100,7 @@ trait DBPropSVAppComponent {
         }
       }
 
-      if(layout.p.getParent != null) listener.attach(null)
+      if (layout.p.getParent != null) listener.attach(null)
       layout.p.addAttachListener(listener)
       layout.p.addDetachListener(new DetachListener {
         def detach(event: DetachEvent) {

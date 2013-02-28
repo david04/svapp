@@ -5,10 +5,10 @@ import java.sql.Connection
 import java.io._
 import sun.misc.{BASE64Decoder, BASE64Encoder}
 import org.apache.log4j.Logger
-import com.github.david04.svapp.base.SVApp
+import com.github.david04.svapp.base.{SVAppDB, SVApp}
 
 trait DBClassSVAppComponent {
-  svApp: SVApp =>
+  svApp: SVAppDB =>
 
   object DBObjectClassTrait {
     def createProp[T](value: T): Prop[T] = new PropImpl[T](Some(value)) {}
@@ -195,6 +195,12 @@ trait DBClassSVAppComponent {
     protected def immutableVal[P <: Any](name: String)(implicit row: SqlRow) =
       row.asMap(compObjHelper.table + "." + name).asInstanceOf[P]
 
+    protected def immutableObj[P <: DBObjectClassTrait](objCompanion: DBCompanionObjectTrait[P])(implicit row: SqlRow): P =
+      immutableObj(objCompanion, objCompanion.table + "id")
+
+    protected def immutableObj[P <: DBObjectClassTrait](objCompanion: DBCompanionObjectTrait[P], name: String)(implicit row: SqlRow): P =
+      objCompanion.fromId(row.asMap(compObjHelper.table + "." + name).asInstanceOf[Int])
+
     protected def mutableObj[P <: DBObjectClassTrait](
                                                        objCompanion: DBCompanionObjectTrait[P],
                                                        pType: DBPropertyType = DBPropertyTypes.UNDEFINED,
@@ -343,7 +349,7 @@ trait DBClassSVAppComponent {
 
     protected def oneToMany[Q <: DBObjectClassTrait](
                                                       otherCompObjHelper: DBCompanionObjectTrait[Q],
-                                                      otherPropSelector: Option[Q => DBProp[this.type]] = None,
+                                                      otherPropSelector: Option[Q => DBProp[_]] = None,
                                                       pType: DBPropertyType = DBPropertyTypes.UNDEFINED,
                                                       thisIdName: String = compObjHelper.table + "id") = {
 
@@ -366,6 +372,26 @@ trait DBClassSVAppComponent {
                 }
               })
             })
+          case None =>
+        }
+      }
+    }
+
+    protected def oneToManyImmutable[Q <: DBObjectClassTrait](
+                                                      otherCompObjHelper: DBCompanionObjectTrait[Q],
+                                                      otherPropSelector: Option[Q => _] = None,
+                                                      pType: DBPropertyType = DBPropertyTypes.UNDEFINED,
+                                                      thisIdName: String = compObjHelper.table + "id") = {
+      def dbValue() =
+        (db withConnection {
+          implicit connection: Connection =>
+            SQL("select id from " + otherCompObjHelper.table + " where " + thisIdName + "={tId}").onParams(self.id)().collect {case Row(id: Int) => id}
+        }).map(oId => otherCompObjHelper.fromId(oId)).toSet
+
+      new PropROImpl[Set[Q]](Some(dbValue())) {
+
+        otherPropSelector match {
+          case Some(sel) => otherCompObjHelper.createdListeners += ((q, u) => if (sel(q) == self) value_=(super.value + q)(u))
           case None =>
         }
       }

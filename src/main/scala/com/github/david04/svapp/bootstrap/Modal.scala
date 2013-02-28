@@ -2,6 +2,7 @@ package com.github.david04.svapp.bootstrap
 
 import vaadin.scala.{Component, Label, Button, CssLayout}
 import vaadin.scala.Label.ContentMode
+import com.vaadin.server.ClientConnector.{AttachEvent, AttachListener}
 
 
 abstract class Modal() extends CssLayout {
@@ -19,10 +20,20 @@ abstract class Modal() extends CssLayout {
 
   val openBtn =
   //    add(new CssLayout() with InnerHtml {innerHtml = s"<a href='#$mId' role='button' class='${btnStyles.mkString(" ")}' data-toggle='modal'>$btnCaption</a>"})
-    add(new Button() with InnerHtml {
+    new Button() with InnerHtml {
       innerHtml = s"<a href='#$mId' role='button' class='${btnStyles.mkString(" ")}' data-toggle='modal'>$btnCaption</a>"
       clickListeners += (_ => refresh())
+    }
+
+  class ModalOpenButton extends Button with Attributes {
+    attributes("href") = "#" + mId
+    attributes("role") = "button"
+    attributes("data-toggle") = "modal"
+
+    p.addAttachListener(new AttachListener {
+      def attach(event: AttachEvent) { clickListeners += (_ => refresh()) }
     })
+  }
 
   protected val closeBtn = new Button() with Attributes {
     styleNames += "btn"
@@ -38,6 +49,7 @@ abstract class Modal() extends CssLayout {
     attributes("role") = "dialog"
     attributes("aria-labelledby") = "l" + mId
     attributes("aria-hidden") = "true"
+    attributes("tabindex") = "-1"
 
     add(new Div("modal-header") {
       add(new Div() with InnerHtml {innerHtml = "<button type='button' class='close' data-dismiss='modal' aria-hidden='true'>×</button>"})

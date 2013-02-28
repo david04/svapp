@@ -1,9 +1,10 @@
 package com.github.david04.svapp.bootstrap
 
-import vaadin.scala.{Component, AbstractTextField}
+import vaadin.scala.{Page, Component, AbstractTextField}
 import java.util.UUID
 import com.vaadin.server.ClientConnector.{AttachEvent, AttachListener}
 import org.json.simple.JSONValue
+import com.vaadin.server
 
 trait Placeholder {
   self: AbstractTextField =>
@@ -17,6 +18,7 @@ trait Placeholder {
         case Some(p) => {
           if (!self.id.isDefined) id = UUID.randomUUID().toString.take(6)
           ui.get.page.p.getJavaScript.execute("document.getElementById(\"" + id.get + "\").setAttribute(\"placeholder\", \"" + p + "\")")
+          ui.get.page.p.getJavaScript.execute("$('input, textarea').placeholder()")
         }
       }
   })
@@ -41,6 +43,18 @@ trait Attributes {
           attributes.map(att => s"document.getElementById('${id.get}').setAttribute('${att._1}', '${att._2}');").mkString("\n"))
       }
   })
+}
+
+object Cookie {
+
+  def update(k: String, v: String) = server.Page.getCurrent().getJavaScript().execute("document.cookie = \"" + JSONValue.escape(k) + "=" + JSONValue.escape(v) + "\";")
+
+}
+
+object ExecJS {
+
+  def run(code: String) = server.Page.getCurrent().getJavaScript().execute("eval(\"" + JSONValue.escape(code) + "\");")
+
 }
 
 trait InnerHtml {

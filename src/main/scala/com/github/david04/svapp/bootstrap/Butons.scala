@@ -13,6 +13,8 @@ object BtnClasses {
   val DANGER: BtnClass = "btn-danger"
   val INVERSE: BtnClass = "btn-inverse"
   val LINK: BtnClass = "btn-link"
+
+  val all = Set(PRIMARY, INFO, SUCCESS, WARNING, DANGER, INVERSE, LINK)
 }
 
 object BtnSizes {
@@ -54,6 +56,8 @@ class ComboBtnGroup(selected: Button, btns: Seq[Button], btnClass: BtnClasses.Bt
   add(lbl, "__lbl")
 
   def selected_=(b: Button) { lbl.value = b.caption.get }
+
+  btns.foreach(b => b.clickListeners += (_ => selected_=(b)))
 
   btns.zipWithIndex.foreach(b => add(b._1, "__btn" + b._2))
 }

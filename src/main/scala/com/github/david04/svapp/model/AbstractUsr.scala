@@ -6,11 +6,11 @@ import scala.Some
 import anorm.SqlRow
 import java.math.BigInteger
 import java.security.MessageDigest
-import com.github.david04.svapp.base.SVApp
+import com.github.david04.svapp.base.{SVAppDB, SVApp}
 
 
 trait DBUsrSVAppComponent {
-  svApp: SVApp =>
+  svApp: SVAppDB =>
 
   abstract class AbstractUsr()(implicit row: SqlRow) extends DBObjectClassTrait {
 

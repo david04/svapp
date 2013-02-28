@@ -2,11 +2,11 @@ package com.github.david04.svapp.db
 
 import java.sql.Connection
 import java.sql.DriverManager
-import com.github.david04.svapp.base.SVApp
+import com.github.david04.svapp.base.{SVAppDB, SVApp}
 
 
 trait DBSVAppComponent {
-  svApp: SVApp =>
+  svApp: SVAppDB =>
 
   val db = new DB()
 

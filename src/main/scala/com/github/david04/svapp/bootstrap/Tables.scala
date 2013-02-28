@@ -19,11 +19,15 @@ trait BSTablesSVAppComponent {
     def toId(o: AnyRef) = Integer.toString(o.hashCode(), Character.MAX_RADIX)
 
     val tId = "_t" + toId(this)
-    protected val tableStyles = mutable.Set[String]()
-    tableStyles += "table"
+    protected val tableStyles = mutable.Set[String]("table")
 
     private var fhead: () => Seq[(Seq[String], Any)] = () => null
     private var fbody: () => Seq[(Seq[String], Seq[(Seq[String], Any)])] = () => null
+
+    protected val paginate: Boolean = false
+    protected val pageSize: Int = 12
+    protected val maxPagesShowing: Int = 5
+    protected var currentPage: Int = 1
 
     // ==== HEAD setters ====
     def tHead(d: Seq[Any]) { tHead(() => d) }
@@ -64,6 +68,22 @@ trait BSTablesSVAppComponent {
       else "") +
       "</table>"
 
+    def pagination(current: Int, npages: Int, btns: List[Int]): String = {
+      val prevStyle = if (current == 1) "disabled" else ""
+      val nextStyle = if (current == npages) "disabled" else ""
+
+      "" +
+        "<div style=\"text-align:center;\">" +
+        "<div class=\"pagination\">" +
+        "<ul>" +
+        s"<li class='$prevStyle'><a><div location='__page_prev'></div></a></li>" +
+        btns.map(i => s"<li class='${if (i == current) "active" else ""}'><a><div location='__page_$i'></div></a></li>").mkString +
+        s"<li class='$nextStyle'><a><div location='__page_next'></div></a></li>" +
+        "</ul>" +
+        "</div>" +
+        "</div>"
+    }
+
     private def process(o: Any): String = o match {
       case Some(v) => process(v)
       case None => ""
@@ -74,22 +94,59 @@ trait BSTablesSVAppComponent {
 
     def refresh(): Unit = {
       val thead = fhead()
-      val tbody = fbody()
-      val contents = html(thead, tbody)
+      val all = fbody()
+      if (all != null) {
+        val npages = math.ceil(all.size.toDouble / pageSize).toInt
+        currentPage = math.min(npages, currentPage)
+        val tbody = if (!paginate || all.isEmpty) all else all.grouped(pageSize).toSeq(currentPage - 1)
+        val contents =
+          if (!paginate || all.isEmpty) html(thead, tbody)
+          else {
+            val stdSize = (maxPagesShowing - 1) / 2
 
-      removeAllComponents()
+            val leftAvailable = currentPage - 1
+            val rightAvailable = npages - currentPage
 
-      add(new CustomLayout() {
-        templateContents = contents
+            val nLeft = math.min(leftAvailable, stdSize) + math.max(stdSize - rightAvailable, 0)
+            val nRight = math.min(rightAvailable, stdSize) + math.max(stdSize - leftAvailable, 0)
 
-        // TODO: thead
+            val btns = ((currentPage - nLeft) to (currentPage + nRight)).toList
 
-        if (tbody != null)
+            html(thead, tbody) + pagination(currentPage, npages, btns)
+          }
+
+        removeAllComponents()
+
+        add(new CustomLayout() {
+          templateContents = contents
+
+          // TODO: thead
+
           tbody.foreach(_._2.foreach(_._2 match {
             case c: Component => add(c, s"__c${toId(c)}")
             case _ =>
           }))
-      })
+
+          if (paginate && !all.isEmpty) {
+            add(new Button() {
+              styleNames +=("padding-right-12px", "padding-left-12px")
+              caption = "Prev"
+              clickListeners += (_ => {currentPage = math.max(1, currentPage - 1); refresh()})
+            }, "__page_prev")
+            (1 to npages).foreach(i =>
+              add(new Button() {
+                styleNames +=("padding-right-12px", "padding-left-12px")
+                caption = "" + i
+                clickListeners += (_ => {currentPage = i; refresh()})
+              }, "__page_" + i))
+            add(new Button() {
+              styleNames +=("padding-right-12px", "padding-left-12px")
+              caption = "Next"
+              clickListeners += (_ => {currentPage = math.min(npages, currentPage + 1); refresh()})
+            }, "__page_next")
+          }
+        })
+      }
     }
   }
 

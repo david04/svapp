@@ -1,5 +1,6 @@
 
 source settings.sh
+source "$BIN/svapp_before.sh"
 
 #RUN sudo yum -y install postgresql postgresql-server
 

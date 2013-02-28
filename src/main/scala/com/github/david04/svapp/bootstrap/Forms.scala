@@ -21,8 +21,9 @@ trait FormField {
   val layout: Layout
 }
 
-abstract class FormTextField(val name: String) extends TextField with FormField {
+trait FormTextFieldTrait extends AbstractTextField with FormField {
 
+  val name: String
   private[bootstrap] var form: Form = null.asInstanceOf[Form]
   protected val tf = this
   private val errorLabel = new Label() {
@@ -39,8 +40,8 @@ abstract class FormTextField(val name: String) extends TextField with FormField 
 
   def revalidate() {
     valdtrs.find(_._1(value.getOrElse("").toString) == false) match {
-      case Some(v) => {valid = false; errorLabel.value = v._2; form.update()}
-      case None => {valid = true; errorLabel.value = ""; form.update()}
+      case Some(v) => {valid = false; errorLabel.value = v._2; if (form != null) form.update()}
+      case None => {valid = true; errorLabel.value = ""; if (form != null) form.update()}
     }
   }
 
@@ -57,6 +58,10 @@ abstract class FormTextField(val name: String) extends TextField with FormField 
     }, "__controls")
   }
 }
+
+abstract class FormTextField(val name: String) extends TextField with FormTextFieldTrait
+
+abstract class FormPasswordField(val name: String) extends PasswordField with FormTextFieldTrait
 
 abstract class Form(formStyle: String = "form-horizontal") extends CustomLayout {
 
@@ -75,7 +80,7 @@ abstract class Form(formStyle: String = "form-horizontal") extends CustomLayout 
 
   val externalBtns = false
   val submitBtn = new Button() {styleNames +=("btn", "btn-primary"); caption = "Save"}
-  val cancelBtn = new Button() {styleNames +=("btn", "margin-left-10"); caption = "Cancel"}
+  val cancelBtn = new Button() {styleNames +=("btn", "margin-left-10px"); caption = "Cancel"}
 
   //TODO: Call this in subclass
   def createForm() {

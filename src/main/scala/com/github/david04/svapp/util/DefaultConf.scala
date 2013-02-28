@@ -6,9 +6,8 @@ import com.github.david04.svapp.base.SVApp
 import com.typesafe.config.{Config, ConfigFactory}
 
 trait ConfSVAppComponent {
-  svApp: SVApp =>
 
- lazy val conf: DefaultConf = new DefaultConf()
+  lazy val conf: DefaultConf = new DefaultConf()
 
   class DefaultConf extends Logging {
 
@@ -46,9 +45,10 @@ trait ConfSVAppComponent {
     val appDomain = noLeadingSlash(string("appDomain", "localhost"))
 
     // Logging Options
-    val logging = boolean("logging", true)
+    val loggingEnabled = boolean("logging", true)
     val consoleLogging = Level.toLevel(string("consoleLogging", "OFF"))
-    val logPath = file("logPath", new File("./default.log"))
+    val fileLogging = Level.toLevel(string("fileLogging", "OFF"))
+    val logFile = file("logFile", new File("./admin32call.log"))
     val supportEmail = string("supportEmail", "davidbranquinho@gmail.com")
 
     // Email Options

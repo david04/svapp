@@ -40,8 +40,8 @@ trait NaviagationSVAppComponent {
       else {
         openInstance match {
           case Some(instance) if instance == matched => // Nothing to do: opened and same match
-          case Some(instance) => {close(); println("open " + matched); openComponent = Some(add(createItem(this, matched, thisLayout)))} // Opened but with different params
-          case None => {println("open " + matched); openComponent = Some(add(createItem(this, matched, thisLayout)))} // Closed - have to open
+          case Some(instance) => {close(); openComponent = Some(add(createItem(this, matched, thisLayout)))} // Opened but with different params
+          case None => {openComponent = Some(add(createItem(this, matched, thisLayout)))} // Closed - have to open
         }
         openInstance = Some(matched)
 

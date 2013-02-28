@@ -2,14 +2,14 @@ package com.github.david04.db
 
 import anorm._
 import java.sql.Connection
-import com.github.david04.svapp.base.SVApp
+import com.github.david04.svapp.base.{SVAppDB, SVApp}
 
 object DBCache {
   val cache = collection.mutable.Map[String, collection.mutable.Map[Int, _]]()
 }
 
 trait DBCompanionSVAppComponent {
-  svApp: SVApp =>
+  svApp: SVAppDB =>
 
   trait DBCompanionObjectTrait[T <: DBObjectClassTrait] {
 

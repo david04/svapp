@@ -14,14 +14,14 @@ resolvers ++= Seq(
 scalacOptions ++= Seq("-Xcheckinit")
 
 libraryDependencies ++= Seq(
-  "com.vaadin" % "vaadin-server" % "7.0-SNAPSHOT",
-  "com.vaadin" % "vaadin-client-compiled" % "7.0-SNAPSHOT",
-  "com.vaadin" % "vaadin-themes" % "7.0-SNAPSHOT",
+  "com.vaadin" % "vaadin-server" % "7.0.1",
+  "com.vaadin" % "vaadin-client-compiled" % "7.0.1",
+  "com.vaadin" % "vaadin-themes" % "7.0.1",
   "javax.servlet" % "javax.servlet-api" % "3.0.1",
   "play" % "anorm_2.9.1" % "2.0.4",
   "javax.mail" % "mail" % "1.4.5",
   "log4j" % "log4j" % "1.2.17",
-  "com.typesafe" %% "scalalogging-slf4j" % "1.0.1",
   "com.typesafe" % "config" % "1.0.0",
-  "com.googlecode.json-simple" % "json-simple" % "1.1.1"
+  "com.googlecode.json-simple" % "json-simple" % "1.1.1",
+  "postgresql" % "postgresql" % "9.1-901.jdbc3"
 )

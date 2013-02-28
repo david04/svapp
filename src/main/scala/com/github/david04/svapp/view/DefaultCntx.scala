@@ -1,11 +1,11 @@
 package com.github.david04.svapp.view
 
 import java.net.URLEncoder
-import com.github.david04.svapp.base.SVApp
+import com.github.david04.svapp.base.{SVAppDB, SVApp}
 
 
 trait CntxtSVAppComponent {
-  self: SVApp =>
+  self: SVAppDB =>
 
   lazy val cntxt = new Cntxt()
 
