@@ -30,6 +30,8 @@ with DBClassSVAppComponent
 with DBAccountSVAppComponent
 with DBUsrSVAppComponent
 with ConfSVAppComponent
+with MailServiceSVAppComponent
+with DateUtilsSVAppComponent
 with Logging {
 
   implicit def usr: AbstractUsr
@@ -41,8 +43,6 @@ with NaviagationSVAppComponent
 with CntxtSVAppComponent
 with ErrorsHelperSVAppComponent
 with LayoutUtilsSVAppComponent
-with MailServiceSVAppComponent
-with DateUtilsSVAppComponent
 with BSTablesSVAppComponent {
 
   implicit val svApp: this.type = this

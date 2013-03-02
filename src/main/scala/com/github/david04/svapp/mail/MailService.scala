@@ -4,10 +4,10 @@ import javax.mail._
 import javax.mail.internet._
 import java.util.{Date, Properties}
 
-import com.github.david04.svapp.base.SVApp
+import com.github.david04.svapp.base.{SVAppDB, SVApp}
 
 trait MailServiceSVAppComponent {
-  svApp: SVApp =>
+  svApp: SVAppDB =>
 
   val emailService = new MailService()
 

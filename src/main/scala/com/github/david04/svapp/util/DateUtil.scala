@@ -3,10 +3,10 @@ package com.github.david04.svapp.util
 import java.util.{TimeZone, Date, GregorianCalendar, Calendar}
 import java.text.SimpleDateFormat
 import scala.Some
-import com.github.david04.svapp.base.SVApp
+import com.github.david04.svapp.base.{SVAppDB, SVApp}
 
 trait DateUtilsSVAppComponent {
-  svApp: SVApp =>
+  svApp: SVAppDB =>
 
   val dateUtil = new DateUtil
 
@@ -88,8 +88,9 @@ trait DateUtilsSVAppComponent {
   }
 
   class DatePlus(date: Date) {
+    val dateO = new Date(date.getTime - date.getTime % (1000 * 60 * 60 * 24))
 
-    val dateO = dateUtil.dateOnly(date)
+    def formatDate(date: Date, style: Int = java.text.DateFormat.SHORT)(implicit usr: AbstractUsr): String = java.text.DateFormat.getDateInstance(style).format(usr.sysToUserTime(date))
 
     override def equals(other: Any): Boolean =
       (other.isInstanceOf[DatePlus] && other.asInstanceOf[DatePlus].dateO == dateO) || (other.isInstanceOf[Date] && other.asInstanceOf[Date] == dateO)
