@@ -23,5 +23,6 @@ libraryDependencies ++= Seq(
   "log4j" % "log4j" % "1.2.17",
   "com.typesafe" % "config" % "1.0.0",
   "com.googlecode.json-simple" % "json-simple" % "1.1.1",
-  "postgresql" % "postgresql" % "9.1-901.jdbc3"
+  "postgresql" % "postgresql" % "9.1-901.jdbc3",
+  "org.apache.poi" % "poi" % "3.9"
 )
