@@ -5,6 +5,8 @@ import javax.mail.internet._
 import java.util.{Date, Properties}
 
 import com.github.david04.svapp.base.{SVAppDB, SVApp}
+import javax.activation.{DataHandler, FileDataSource}
+import java.io.File
 
 trait MailServiceSVAppComponent {
   svApp: SVAppDB =>
@@ -27,7 +29,7 @@ trait MailServiceSVAppComponent {
         }
       })
 
-    def send(to: String, subject: String, text: String, html: Boolean = true) {
+    def send(to: String, subject: String, text: String, html: Boolean = true, attachments: Seq[File] = Seq()) {
       new Thread() {
         override def run() {
           mailService.synchronized {
@@ -36,7 +38,25 @@ trait MailServiceSVAppComponent {
               message.setFrom(new InternetAddress(svApp.conf.emailFrom))
               message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(to).asInstanceOf[Array[javax.mail.Address]])
               message.setSubject(subject)
-              message.setContent(text, if (html) "text/html; charset=utf-8" else "text/plain; charset=utf-8")
+              //              message.setContent(text, if (html) "text/html; charset=utf-8" else "text/plain; charset=utf-8")
+
+              val mbp1 = new MimeBodyPart()
+              mbp1.setContent(text, if (html) "text/html; charset=utf-8" else "text/plain; charset=utf-8")
+
+              val files = attachments.map(f => {
+                val mbp = new MimeBodyPart()
+                val fds = new FileDataSource(f)
+                mbp.setDataHandler(new DataHandler(fds))
+                mbp.setFileName(fds.getName())
+                fds.getOutputStream.close
+                mbp
+              })
+
+              val mp = new MimeMultipart()
+              mp.addBodyPart(mbp1)
+              files.foreach(mp.addBodyPart(_))
+
+              message.setContent(mp)
 
               println("Sending email")
               Transport.send(message)

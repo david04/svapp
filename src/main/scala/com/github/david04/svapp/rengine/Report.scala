@@ -144,7 +144,8 @@ abstract class Report(template: File, output: File) {
   }
 
   def toPDF(): File = {
-    Execute(s"soffice --headless --convert-to pdf '${output.getAbsolutePath}' -outdir '${output.getAbsoluteFile.getParent}'")
+    val exec = s"soffice.bin --headless --convert-to pdf '${output.getAbsolutePath}' -outdir '${output.getAbsoluteFile.getParent}'"
+    Execute(exec)
     new File(output.getAbsolutePath.replaceFirst("xls$", "pdf"))
   }
 
