@@ -29,7 +29,10 @@ trait MailServiceSVAppComponent {
         }
       })
 
-    def send(to: String, subject: String, text: String, html: Boolean = true, attachments: Seq[File] = Seq()) {
+    def send(to: String, subject: String, text: String, html: Boolean = true, attachments: Seq[File] = Seq()): Unit =
+      sendEmail(to, subject, text, html, attachments.map(f => (f, f.getName)))
+
+    def sendEmail(to: String, subject: String, text: String, html: Boolean, attachments: Seq[(File, String)]): Unit = {
       new Thread() {
         override def run() {
           mailService.synchronized {
@@ -45,10 +48,16 @@ trait MailServiceSVAppComponent {
 
               val files = attachments.map(f => {
                 val mbp = new MimeBodyPart()
-                val fds = new FileDataSource(f)
+                val fds = new FileDataSource(f._1) {
+                  override def getContentType =
+                    "application/octet-stream"
+                }
                 mbp.setDataHandler(new DataHandler(fds))
-                mbp.setFileName(fds.getName())
-                fds.getOutputStream.close
+                mbp.setFileName(f._2)
+                mbp.setHeader("Content-Type", fds.getContentType())
+                mbp.setHeader("Content-ID", f._2)
+                mbp.setDisposition(Part.INLINE)
+//                fds.getOutputStream.close
                 mbp
               })
 
