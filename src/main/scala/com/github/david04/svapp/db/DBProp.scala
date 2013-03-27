@@ -104,7 +104,7 @@ trait DBPropSVAppComponent {
       layout.p.addAttachListener(listener)
       layout.p.addDetachListener(new DetachListener {
         def detach(event: DetachEvent) {
-          val matched = valueChangeListeners.filter(kv => l == kv._2.originLayout).map(_._1)
+          val matched = valueChangeListeners.filter(kv => layout == kv._2.originLayout).map(_._1)
           valueChangeListeners --= matched
           DBPropertyListenersCounter -= (matched.size)
         }
